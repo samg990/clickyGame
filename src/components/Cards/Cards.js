@@ -1,4 +1,5 @@
 import React from "react";
+import "./style.css";
 
 const Cards = props => (
 	<div
@@ -7,7 +8,7 @@ const Cards = props => (
 		onClick={() => props.handleClick(props.id)}
 	>
 		<div className="img-container">
-			<img src={props.image} />
+			<img alt="" src={props.image} />
 		</div>
 	</div>
 );

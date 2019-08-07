@@ -1,42 +1,42 @@
 [
 	{
 		"id": 1,
-		"image": "./assets/blazers.png",
+		"image": "https://usatftw.files.wordpress.com/2016/05/logo-golden-state-warriors1.png?w=640&h=625",
 		"clicked": false
 	},
 	{
 		"id": 2,
-		"image": "./assets/clippers.png",
+		"image": "https://usatftw.files.wordpress.com/2016/05/primary.jpg?w=455&h=453",
 		"clicked": false
 	},
 	{
 		"id": 3,
-		"image": "./assets/heat.png",
+		"image": "https://usatftw.files.wordpress.com/2016/05/celtics-logos.png?w=576&h=640",
 		"clicked": false
 	},
 	{
 		"id": 4,
-		"image": "./assets/lakers.png",
+		"image": "https://usatftw.files.wordpress.com/2016/05/screen-shot-2016-05-27-at-9-51-26-am.jpg?w=640&h=578",
 		"clicked": false
 	},
 	{
 		"id": 5,
-		"image": "./assets/pacers.jpg",
+		"image": "https://usatftw.files.wordpress.com/2016/05/2000px-losangeles_lakers_logo-svg.png?w=1024&h=654",
 		"clicked": false
 	},
 	{
 		"id": 6,
-		"image": "./assets/pistons.png",
+		"image": "https://usatftw.files.wordpress.com/2016/04/nets_logo.png",
 		"clicked": false
 	},
 	{
 		"id": 7,
-		"image": "./assets/raps.png",
+		"image": "https://usatftw.files.wordpress.com/2016/04/screen-shot-2016-04-26-at-2-40-38-pm.jpg?w=640&h=500",
 		"clicked": false
 	},
 	{
 		"id": 8,
-		"image": "./assets/wash.png",
+		"image": "https://usatftw.files.wordpress.com/2016/04/screen-shot-2016-04-26-at-2-36-34-pm.jpg?w=521&h=640",
 		"clicked": false
 	}
 ]
