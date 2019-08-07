@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Wrapper from "./components/Wrapper/index";
 import Nav from "./components/Nav/Nav";
-import Score from "./components/Score/Score";
+// import Score from "./components/Score/Score";
 import Cards from "./components/Cards/Cards";
 import nba from "./nba.json";
 
@@ -19,6 +19,11 @@ class App extends Component {
 		currentScore: 0,
 		topScore: 0,
 		clicked: [],
+	};
+
+	handleShuffle = () => {
+		let carshuf = shuffleCards(nba);
+		this.setState({ cards: carshuf });
 	};
 
 	handleClick = id => {
@@ -51,12 +56,6 @@ class App extends Component {
 		});
 		this.handleShuffle();
 	};
-
-	handleShuffle = () => {
-		let carshuf = shuffleCards(nba);
-		this.setState({ cards: carshuf });
-	};
-
 	render() {
 		return (
 			<Wrapper>
