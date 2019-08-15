@@ -21,18 +21,18 @@ class App extends Component {
 		clicked: [],
 	};
 
-	handleShuffle = () => {
-		let carshuf = shuffleCards(nba);
-		this.setState({ cards: carshuf });
-	};
-
 	handleClick = id => {
-		if (this.state.clicked.indexOf(id) === -1) {
+		if (this.state.clicked.indexOf(id) === false) {
 			this.handleIncrement();
 			this.setState({ clicked: this.state.clicked.concat(id) });
 		} else {
 			this.handleReset();
 		}
+	};
+
+	handleShuffle = () => {
+		let carshuf = shuffleCards(nba);
+		this.setState({ cards: carshuf });
 	};
 
 	handleIncrement = () => {
@@ -56,12 +56,19 @@ class App extends Component {
 		});
 		this.handleShuffle();
 	};
+
 	render() {
 		return (
 			<Wrapper>
 				<Nav />
 				{this.state.nba.map(cards => (
-					<Cards id={cards.id} key={cards.id} image={cards.image} />
+					<Cards
+						id={cards.id}
+						key={cards.id}
+						image={cards.image}
+						handleClick={this.handleClick}
+						handleIncrement={this.handleIncrement}
+					/>
 				))}
 			</Wrapper>
 		);

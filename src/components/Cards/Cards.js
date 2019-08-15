@@ -8,7 +8,11 @@ const Cards = props => (
 		onClick={() => props.handleClick(props.id)}
 	>
 		<div className="img-container">
-			<img alt="" src={props.image} />
+			<img
+				alt=""
+				src={props.image}
+				// onClick={() => props.handleClick(props.id)}
+			/>
 		</div>
 	</div>
 );

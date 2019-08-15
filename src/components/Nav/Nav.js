@@ -2,9 +2,9 @@ import React from "react";
 
 function Nav(props) {
 	return (
-		<div class="navbar-fixed">
+		<div className="navbar-fixed">
 			<nav>
-				<div class="nav-wrapper red accent-2">
+				<div className="nav-wrapper red accent-2">
 					<ul>
 						<li id="title">Clicky Game</li>
 
